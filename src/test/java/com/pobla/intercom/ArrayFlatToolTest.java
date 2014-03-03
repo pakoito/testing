@@ -2,12 +2,8 @@ package com.pobla.intercom;
 
 import org.junit.Test;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-
 import static junit.framework.TestCase.assertNull;
-import static junit.framework.TestCase.assertTrue;
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertNotNull;
 
 /**
@@ -23,7 +19,7 @@ public class ArrayFlatToolTest {
         int[] expected = {1, 23, 43, 54, 1, 2, 4, 5, 65, 12, 1, 5, 4};
 
         assertNotNull("Resulting array is null", result);
-        assertTrue(String.format("Resulting array <%s> is different from expected <%s>", Arrays.toString(result), Arrays.toString(expected)), Arrays.equals(result, expected));
+        assertArrayEquals("Resulting array is different from expected", expected, result);
 
     }
 
@@ -44,7 +40,8 @@ public class ArrayFlatToolTest {
         Integer[] expected = {1, 23, 43, 54, 1, 2, 4, 5, 65, 12, 1, 5, 4};
 
         assertNotNull("Resulting array is null", result);
-        assertTrue(String.format("Resulting array <%s> is different from expected <%s>", Arrays.toString(result), Arrays.toString(expected)), Arrays.equals(result, expected));
+        assertArrayEquals("Resulting array is different from expected", expected, result);
+
 
     }
 
