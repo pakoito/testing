@@ -14,42 +14,16 @@ public class SequenceWords {
 
 	private static final Logger log = Logger.getLogger(SequenceWords.class);
 
-	private HashSet<String> diccionary = new HashSet<String>();
-
-	public Node findSequence(String from, String to) {
-		diccionary.add("dog");
-		diccionary.add("cod");
-		diccionary.add("cot");
-		diccionary.add("cat");
-		diccionary.add("dat");
-		diccionary.add("qog");
-		diccionary.add("wog");
-		diccionary.add("eog");
-		diccionary.add("rot");
-		diccionary.add("tot");
-		diccionary.add("yot");
-		diccionary.add("czg");
-		diccionary.add("cxg");
-		diccionary.add("ccg");
-		diccionary.add("cvg");
-		diccionary.add("dow");
-		diccionary.add("cog");
-		diccionary.add("daw");
-		diccionary.add("dqq");
-		diccionary.add("cag");
-		diccionary.add("dhe");
-		diccionary.add("poi");
-		diccionary.add("zxw");
-		diccionary.add("wqx");
-		diccionary.add("cat");
-		diccionary.add("cat");
-		diccionary.add("cyw");
-		diccionary.add("cgq");
-		diccionary.add("csg");
-		diccionary.add("xod");
-		diccionary.add("czw");
-		diccionary.add("vat");
-		diccionary.add("bog");
+	public Node findSequence(String from, String to, HashSet<String> diccionary) {
+		
+		if(from == null || to == null){
+			log.warn("Unable to look for null nodes");
+			return null;
+		}
+		if(diccionary== null || diccionary.isEmpty()){
+			log.warn("Unable generate graph");
+			return null;
+		}
 
 		DepthFirstSearch dfs = new DepthFirstSearch(diccionary);
 
