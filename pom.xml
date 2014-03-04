@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.pobla</groupId>
-    <artifactId>Intercom</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>test</artifactId>
+    <version>1.0</version>
 
     <dependencies>
         <dependency>

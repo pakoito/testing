@@ -1,4 +1,4 @@
-package com.pobla.intercom.tools;
+package com.pobla.test.tools;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -55,8 +55,7 @@ public class DepthFirstSearch {
 			if (!visited.contains(node.getData())) {
 				node = DFS(node, visited, goal);
 				if (node == null) {
-					log.warn("Solution is not reacheble.");
-					return null;
+					log.debug("Solution is not reacheble, use other path");
 				} else{
 					return node;
 				}

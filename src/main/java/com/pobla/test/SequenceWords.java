@@ -1,11 +1,11 @@
-package com.pobla.intercom;
+package com.pobla.test;
 
 import java.util.HashSet;
 
 import org.apache.log4j.Logger;
 
-import com.pobla.intercom.tools.DepthFirstSearch;
-import com.pobla.intercom.tools.Node;
+import com.pobla.test.tools.DepthFirstSearch;
+import com.pobla.test.tools.Node;
 
 /**
  * Created by Pobla on 03/03/2014.

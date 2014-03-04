@@ -1,7 +1,4 @@
-package com.pobla.intercom;
-
-import com.pobla.intercom.tools.Quicksort;
-import org.apache.log4j.Logger;
+package com.pobla.test;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,6 +6,10 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 import java.util.Arrays;
+
+import org.apache.log4j.Logger;
+
+import com.pobla.test.tools.Quicksort;
 
 
 /**

@@ -1,10 +1,17 @@
-package com.pobla.intercom;
+package com.pobla.test;
+
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+
+import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 
 import org.junit.Test;
-
-import java.io.*;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by Pobla on 03/03/2014.

@@ -1,10 +1,10 @@
-package com.pobla.intercom;
-
-import org.junit.Test;
+package com.pobla.test;
 
 import static junit.framework.TestCase.assertNull;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertNotNull;
+
+import org.junit.Test;
 
 /**
  * Created by Pobla on 03/03/2014.

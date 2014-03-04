@@ -1,4 +1,4 @@
-package com.pobla.intercom.tools;
+package com.pobla.test.tools;
 
 /**
  * Created by Pobla on 04/03/2014.

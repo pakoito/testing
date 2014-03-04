@@ -1,6 +1,7 @@
-package com.pobla.intercom;
+package com.pobla.test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 import java.util.HashSet;
 
@@ -8,17 +9,17 @@ import org.apache.log4j.Logger;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.pobla.intercom.tools.Node;
+import com.pobla.test.tools.Node;
 
 /**
  * Created by Pobla on 04/03/2014.
  */
 public class SequenceWordsTest {
 
-	private static final Logger log = Logger.getLogger(SequenceWordsTest.class);
-
+	
 	private static HashSet<String> diccionary = new HashSet<String>();
 
+	//Random data with an available path for the tests.
 	@BeforeClass
 	public static void initClass() {
 		diccionary.add("dog");
