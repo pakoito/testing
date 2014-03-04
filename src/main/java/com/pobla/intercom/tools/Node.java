@@ -39,14 +39,14 @@ public class Node {
 	}
 
 	/**
-	 * Returns true if the number of different letters is less than 1, false otherwise.
+	 * Returns true if the number of different letters is 1, false otherwise.
 	 * @param neighbor
 	 * @return
 	 */
 	public boolean isValidNeighbor(String neighbor) {
 		int result = 0;
 
-		if (neighbor.length() != data.length())
+		if (neighbor == null || neighbor.length() != data.length())
 			return false;
 
 		for (int i = 0; (i < data.length()) && (result <= 1); i++) {
@@ -54,7 +54,7 @@ public class Node {
 				result++;
 			}
 		}
-		if (result <= 1) {
+		if (result == 1) {
 			return true;
 		} else {
 			return false;
