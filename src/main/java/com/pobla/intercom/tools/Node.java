@@ -5,22 +5,60 @@ package com.pobla.intercom.tools;
  */
 public class Node {
 
-    public String getData() {
-        return data;
-    }
+	public String getData() {
+		return data;
+	}
 
-    public void setData(String data) {
-        this.data = data;
-    }
+	public void setData(String data) {
+		this.data = data;
+	}
 
-    private String data;
+	private String data;
+	private Node parent;
 
-    public Node(String string) {
-        this.data = string;
-    }
+	public Node(String string) {
+		this.data = string;
+	}
 
-    @Override
-    public boolean equals(Object obj) {
-        return ((Node) obj).data.equals(this.data);
-    }
+	@Override
+	public boolean equals(Object object) {
+		if (object == null || object.getClass() != this.getClass()) {
+			return false;
+		}
+		Node newNode = (Node) object;
+		return this.getData().equals(newNode.getData());
+		
+	}
+
+	public Node getParent() {
+		return parent;
+	}
+
+	public void setParent(Node parent) {
+		this.parent = parent;
+	}
+
+	/**
+	 * Returns true if the number of different letters is less than 1, false otherwise.
+	 * @param neighbor
+	 * @return
+	 */
+	public boolean isValidNeighbor(String neighbor) {
+		int result = 0;
+
+		if (neighbor.length() != data.length())
+			return false;
+
+		for (int i = 0; (i < data.length()) && (result <= 1); i++) {
+			if (neighbor.charAt(i) - data.charAt(i) != 0) {
+				result++;
+			}
+		}
+		if (result <= 1) {
+			return true;
+		} else {
+			return false;
+		}
+
+	}
 }

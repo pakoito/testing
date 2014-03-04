@@ -1,3 +1,8 @@
+# INTELLIJ
 .idea/
 *.iml
+# Eclipse
+.project
+.classpath
+
 target
